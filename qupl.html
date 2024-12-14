@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Word Appender</title>
+</head>
+<body>
+    <h1>Word Appender</h1>
+    <p>Enter a word and we'll add an "I" at the end.</p>
+    
+    <input type="text" id="userWord" placeholder="Enter a word">
+    <button onclick="appendLetter()">Append 'I'</button>
+    
+    <p>Result: <span id="result"></span></p>
+    
+    <script>
+        function appendLetter() {
+            // Get the user input
+            var userWord = document.getElementById('userWord').value;
+            
+            // Append 'I' to the user input
+            var result = userWord + 'I';
+            
+            // Display the result
+            document.getElementById('result').textContent = result;
+        }
+    </script>
+</body>
+</html>
